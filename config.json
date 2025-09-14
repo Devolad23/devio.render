@@ -1,0 +1,24 @@
+{
+    "prefix": "!",
+    "adminUsers": [],
+    "rateLimits": {
+        "broadcast": {
+            "maxRequests": 5,
+            "windowMs": 300000,
+            "message": "Too many broadcast requests. Please wait 5 minutes."
+        },
+        "userManagement": {
+            "maxRequests": 10,
+            "windowMs": 60000,
+            "message": "Too many user management requests. Please wait 1 minute."
+        }
+    },
+    "broadcast": {
+        "delayBetweenMessages": 1500,
+        "maxRetries": 3,
+        "retryDelay": 2000,
+        "safeMode": true,
+        "defaultAudience": "managed_list",
+        "maxConcurrentMessages": 1
+    }
+}
